@@ -18,6 +18,7 @@
             justify-content: center;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
+
         /* Main Container */
         .container {
             background: rgba(255, 255, 255, 0.15) !important;
@@ -32,6 +33,7 @@
             width: 90%;
             color: white !important;
         }
+
         /* Heading */
         h1 {
             color: #6dd5ed !important;
@@ -40,6 +42,7 @@
             text-align: center;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
+
         /* The Prompt Box */
         .prompt-box {
             background: rgba(109, 213, 237, 0.2) !important;
@@ -48,8 +51,8 @@
             border-radius: 16px;
             border: 3px solid #6dd5ed;
             box-shadow: 0 8px 24px rgba(109, 213, 237, 0.3);
-            margin-bottom: 3rem;
         }
+
         .prompt-text {
             background: rgba(0, 0, 0, 0.3);
             padding: 2rem;
@@ -60,90 +63,7 @@
             color: white;
             font-weight: 500;
         }
-        /* Full Argument Section */
-        .argument-section {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(8px);
-            padding: 2.5rem;
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            margin-top: 2rem;
-        }
-        .argument-section h2 {
-            color: #6dd5ed;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        }
-        .argument-section h3 {
-            color: #a8e6f5;
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .argument-section h4 {
-            color: #c4eef8;
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-        }
-        .argument-section p {
-            line-height: 1.8;
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.95);
-        }
-        .argument-section ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .argument-section li {
-            line-height: 1.8;
-            margin-bottom: 0.5rem;
-            color: rgba(255, 255, 255, 0.95);
-        }
-        /* Table Styling */
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .comparison-table th {
-            background: rgba(109, 213, 237, 0.3);
-            padding: 1rem;
-            text-align: left;
-            font-weight: 600;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-        }
-        .comparison-table td {
-            padding: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        /* Visual IBE Chart */
-        .ibe-chart {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 1.5rem;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-            white-space: pre;
-            line-height: 1.4;
-        }
-        /* Conclusion Box */
-        .conclusion-box {
-            background: rgba(109, 213, 237, 0.15);
-            border-left: 4px solid #6dd5ed;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-        }
+
         /* MOBILE RESPONSIVENESS */
         @media (max-width: 768px) {
             .container {
@@ -151,73 +71,38 @@
                 margin: 1rem auto !important;
                 width: 95%;
             }
+
             h1 {
                 font-size: 2rem;
             }
+
             .prompt-box {
                 padding: 1.8rem;
             }
+
             .prompt-text {
                 padding: 1.5rem;
                 font-size: 1.05rem;
             }
-            .argument-section {
-                padding: 1.8rem;
-            }
-            .argument-section h2 {
-                font-size: 1.6rem;
-            }
-            .argument-section h3 {
-                font-size: 1.3rem;
-            }
-            .argument-section h4 {
-                font-size: 1.1rem;
-            }
-            .comparison-table {
-                font-size: 0.9rem;
-            }
-            .comparison-table th,
-            .comparison-table td {
-                padding: 0.7rem;
-            }
-            .ibe-chart {
-                font-size: 0.75rem;
-                padding: 1rem;
-            }
         }
+
         @media (max-width: 480px) {
             .container {
                 padding: 1.5rem 1rem !important;
                 border-radius: 12px !important;
             }
+
             h1 {
                 font-size: 1.6rem;
             }
+
             .prompt-box {
                 padding: 1.3rem;
             }
+
             .prompt-text {
                 padding: 1.2rem;
                 font-size: 1rem;
-            }
-            .argument-section {
-                padding: 1.3rem;
-            }
-            .argument-section h2 {
-                font-size: 1.4rem;
-            }
-            .argument-section h3 {
-                font-size: 1.2rem;
-            }
-            .argument-section h4 {
-                font-size: 1rem;
-            }
-            .comparison-table {
-                font-size: 0.85rem;
-            }
-            .comparison-table th,
-            .comparison-table td {
-                padding: 0.5rem;
             }
         }
     </style>
@@ -228,162 +113,7 @@
         
         <div class="prompt-box">
             <div class="prompt-text">
-                Analyze the resurrection of Jesus in two distinct layers: (1) a historical IBE evaluation of the resurrection claim using early sources (esp. 1 Cor 15) without ruling out miracles a priori, and (2) a separate discussion of what Jesus' identity would imply if the resurrection occurred. Do not collapse historical analysis into theological belief. Explained for an Atheist.
-            </div>
-        </div>
-
-        <!-- Full Argument Reconstruction -->
-        <div class="argument-section">
-            <h2>The Resurrection Question — Full Argument Reconstruction</h2>
-            
-            <h3>Introduction</h3>
-            <p>We can examine the resurrection of Jesus in two distinct layers:</p>
-            <ul>
-                <li><strong>Historical Analysis:</strong> Using the best historical evidence and reasoning method (Inference to the Best Explanation, IBE), we evaluate whether the resurrection claim fits the facts.</li>
-                <li><strong>Implications if True:</strong> Separately, we consider what the resurrection would imply about Jesus' identity and significance, without conflating historical evidence with theological belief.</li>
-            </ul>
-
-            <h3>Layer 1: Historical Analysis Using IBE</h3>
-            
-            <h4>Step 1: The Evidence</h4>
-            <p>The earliest written account of the resurrection comes from <strong>1 Corinthians 15:3–8</strong>, written by Paul around AD 55–57 (20–25 years after Jesus' death). Key points:</p>
-            <ul>
-                <li>Jesus died and was buried.</li>
-                <li>He appeared alive to multiple people:
-                    <ul>
-                        <li>Peter</li>
-                        <li>The 12 apostles</li>
-                        <li>Over 500 witnesses</li>
-                        <li>Paul himself</li>
-                    </ul>
-                </li>
-                <li>The early church believed in the resurrection very quickly.</li>
-            </ul>
-            <p>Other historical facts:</p>
-            <ul>
-                <li>The tomb was reportedly empty.</li>
-                <li>Followers were willing to face persecution and death.</li>
-                <li>Christianity spread rapidly despite opposition.</li>
-            </ul>
-
-            <h4>Step 2: Competing Explanations</h4>
-            <p>We consider multiple hypotheses and evaluate them by how well they explain the evidence:</p>
-            
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Explanation</th>
-                        <th>What it explains</th>
-                        <th>Weaknesses</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Actual Resurrection</strong></td>
-                        <td>Eyewitnesses, empty tomb, early widespread belief, willingness to die</td>
-                        <td>Requires a miracle</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Hallucinations / visions</strong></td>
-                        <td>Individual experiences (Paul, Peter)</td>
-                        <td>Cannot explain mass appearances or empty tomb</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Legend / myth</strong></td>
-                        <td>Early belief, later development of stories</td>
-                        <td>Hard to explain early timing; needs assumptions</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Fraud / conspiracy</strong></td>
-                        <td>Could explain empty tomb</td>
-                        <td>Implausible: requires coordinated deception under threat of death</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Symbolic/theological only</strong></td>
-                        <td>Explains belief</td>
-                        <td>Does not explain specific events or eyewitness claims</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h4>Visual IBE Summary:</h4>
-            <div class="ibe-chart">Explanatory Power ↑
-10 ┤                  Resurrection
- 9 ┤
- 8 ┤
- 7 ┤
- 6 ┤           Legend/Myth
- 5 ┤           Symbolic/Theological
- 4 ┤    Hallucinations
- 3 ┤    Fraud/Conspiracy
- 2 ┤
- 1 ┤
- 0 ┤_________________________________________________ Plausibility →
-    0    2    4    6    8    10
-   High Naturalism ←→ Low Naturalism (Miracle)</div>
-
-            <h4>Step 3: IBE Conclusion</h4>
-            <ul>
-                <li>The resurrection hypothesis <strong>best accounts</strong> for all known historical evidence.</li>
-                <li>Other naturalistic explanations fail to explain multiple independent witnesses, early adoption, and willingness to die for belief.</li>
-                <li>Methodologically, we do not need to believe in miracles yet; we are just evaluating which explanation fits the data best.</li>
-            </ul>
-
-            <div class="conclusion-box">
-                <strong>Layer 1 Conclusion:</strong> Historically, the resurrection is the best explanation for the early evidence, using standard historical reasoning.
-            </div>
-
-            <h3>Layer 2: Implications if the Resurrection Occurred</h3>
-            <p>Now, let's assume the resurrection actually happened. What follows?</p>
-
-            <h4>Step 1: Jesus' Identity</h4>
-            <ul>
-                <li>Jesus predicted his own resurrection.</li>
-                <li>Resurrection is unprecedented, demonstrating mastery over death.</li>
-                <li>If true, Jesus' claims about being divine or Son of God gain historical credibility.</li>
-            </ul>
-
-            <h4>Step 2: Broader Implications</h4>
-            <ul>
-                <li>His teachings are not merely moral guidance, but carry authority backed by an extraordinary event.</li>
-                <li>Raises philosophical questions:
-                    <ul>
-                        <li>If the resurrection occurred, materialism alone cannot fully explain reality.</li>
-                        <li>We must allow for at least one historical miracle.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h4>Step 3: Skeptical Framing</h4>
-            <ul>
-                <li>One can remain agnostic about miracles while recognizing that the resurrection is historically the best explanation.</li>
-                <li>If accepted, it forces reconsideration of Jesus' significance, without collapsing into theological belief prematurely.</li>
-            </ul>
-
-            <div class="conclusion-box">
-                <strong>Layer 2 Conclusion:</strong> If the resurrection occurred, Jesus' identity and claims are profoundly validated, transforming him from a moral teacher to a unique historical figure with extraordinary significance.
-            </div>
-
-            <h3>Overall Conclusion</h3>
-            
-            <h4>Historical Layer (IBE):</h4>
-            <ul>
-                <li>Resurrection = best explanation for early evidence.</li>
-                <li>Alternatives fail to account for multiple witnesses, empty tomb, rapid belief, and persecution.</li>
-            </ul>
-
-            <h4>Implications Layer:</h4>
-            <ul>
-                <li>Resurrection → strong support for Jesus' divine identity.</li>
-                <li>Opens philosophical questions about miracles and reality.</li>
-            </ul>
-
-            <div class="conclusion-box">
-                <strong>Bottom Line</strong><br><br>
-                <strong>Step 1:</strong> Look at the evidence like a historian — the resurrection fits best.<br>
-                <strong>Step 2:</strong> Consider hypothetically what it would mean — it's transformative.<br><br>
-                Both layers are methodologically distinct, which is exactly the approach the site promises: historical analysis first, implications second, no conflation of evidence with belief.
-            </div>
+                Analyze the resurrection of Jesus in two distinct layers: (1) a historical IBE evaluation of the resurrection claim using early sources (esp. 1 Cor 15) without ruling out miracles a priori, and (2) a separate discussion of what Jesus' identity would imply if the resurrection occurred. Do not collapse historical analysis into theological belief. Explaine for an Atheist.
         </div>
     </div>
 </body>
